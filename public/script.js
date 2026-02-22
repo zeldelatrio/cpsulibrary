@@ -32,10 +32,14 @@ async function loadBooks() {
           <td>${book.title}</td>
           <td>${book.author}</td>
           <td>
-            <button onclick="editBook(${book.id}, '${book.title.replace(/'/g, "\\'")}', '${book.author.replace(/'/g, "\\'")}')">
+          
+            <button class="btn-edit"
+            onclick="editBook(${book.id}, '${book.title.replace(/'/g, "\\'")}', '${book.author.replace(/'/g, "\\'")}')">
               Edit
             </button>
-            <button onclick="deleteBook(${book.id})">
+
+            <button class="btn-delete"
+            onclick="deleteBook(${book.id})">
               Delete
             </button>
           </td>
