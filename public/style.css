@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #cddbd4;
+  margin: 0;
+  padding: 40px;
+}
+
+.container {
+  background: #f4f4f4;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header img {
+  width: 80px;
+}
+
+h1 {
+  color: #1e6b4d;
+}
+
+h3 {
+  color: #1e6b4d;
+}
+
+.form-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #8db39f;
+  width: 200px;
+}
+
+.add-btn {
+  background: #8db39f;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-btn:hover {
+  background: #6e9f86;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+thead {
+  background: #a7cdb7;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+button {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button.edit {
+  background: #9cd39b;
+}
+
+button.delete {
+  background: #f29c9c;
+}
