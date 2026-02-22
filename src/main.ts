@@ -10,7 +10,6 @@ async function bootstrap() {
 
   const app = await NestFactory.create(AppModule);
 
-  app.setGlobalPrefix('books');
   app.enableCors();
 
   // 🔥 ADD THIS BLOCK
