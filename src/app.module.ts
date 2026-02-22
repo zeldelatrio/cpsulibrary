@@ -1,21 +1,24 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { BooksModule } from './books/books.module';
+import { Book } from './books/book.entity';
+import { BooksController } from './books/books.controller';
+import { BooksService } from './books/books.service';
 
 
 @Module({
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'localhost',
       port: 3306,
       username: 'root',
       password: '', // change if you have password
       database: 'cpsu_library',
-      autoLoadEntities: true,
+      entities: [Book],
       synchronize: true, // auto create table (DEV only)
     }),
-    BooksModule,
+         TypeOrmModule.forFeature([Book]), 
   ],
+  controllers: [BooksController],
+  providers: [BooksService],
 })
 export class AppModule {}
