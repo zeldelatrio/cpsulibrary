@@ -1,8 +1,5 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Book } from './books/book.entity';
-import { BooksController } from './books/books.controller';
-import { BooksService } from './books/books.service';
 import { BooksModule } from './books/books.module';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
