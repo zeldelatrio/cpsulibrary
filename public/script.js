@@ -1,4 +1,5 @@
-const API = "https://cpsulibrary.up.railway.app";
+const BASE_URL = "https://cpsulibrary.up.railway.app";
+const API = `${BASE_URL}/books`;
 
 // Load books when page loads
 window.addEventListener("DOMContentLoaded", loadBooks);
